@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<template 
+    format="4"
+    revision="1"
+    name="MVVM Activity"
+    description="Creates pack of classes for MVVM architecture (+ Rx, Koin) - View, ViewModel, Navigator">
+    
+    <category value="MVVM" />
+    <formfactor value="Mobile" />
+    
+    <parameter id="className"
+        name="Activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MvvmScreen"/>
+    
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
